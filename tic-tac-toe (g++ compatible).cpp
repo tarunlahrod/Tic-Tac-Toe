@@ -1,9 +1,6 @@
 //TIC TAC TOE :my FIRST ever game, Dated: 5 jan 2017.
-
+// G++ version made on May 6, 2019.
 #include<iostream>
-#include<stdio.h>
-#include<stdlib.h>
-
 using namespace std;
 
 void make_stone()
@@ -133,8 +130,7 @@ cout<<"	1. Stone \n	2. Paper \n	3. Scissor\n";
 cout<<"	Your Choice...";
 cin>>select;
 
-randomize();
-computer=random(3)+1;
+computer = (rand()%3) + 1;
 result=check_SPS(select,computer);
 cout<<"\n\n	You choosed: "<<select;
 cout<<"\n	Computer: "<<computer;
@@ -158,9 +154,9 @@ case 2:
 cout<<"\n\n							TIC-TAC-TOE\n						       ~~~~~~~~~~~\n";
 
 cout<<"\n\n\n	Enter names...\n\n	Player #1: ";
-gets(P1);
+cin>>P1;
 cout<<"\n	Player #2: ";
-gets(P2);
+cin>>P2;
 
 //assigning the positions to the grid numbers...
 
